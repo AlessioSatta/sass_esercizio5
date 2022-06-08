@@ -1,0 +1,37 @@
+.container .col:nth-child(1) {
+  background-color: #16FBC2;
+  height: 16rem;
+  width: 0.5rem;
+}
+
+.container .col:nth-child(2) {
+  background-color: #19AEAF;
+  height: 16rem;
+  width: 1rem;
+}
+
+.container .col:nth-child(3) {
+  background-color: #B56641;
+  height: 16rem;
+  width: 1.5rem;
+}
+
+.container .col:nth-child(4) {
+  background-color: #D562EB;
+  height: 16rem;
+  width: 2rem;
+}
+
+.container .col:nth-child(5) {
+  background-color: #E7F396;
+  height: 16rem;
+  width: 2.5rem;
+}
+
+.container .col:nth-child(6) {
+  background-color: #4BB137;
+  height: 16rem;
+  width: 3rem;
+}
+
+/*# sourceMappingURL=style.css.map */

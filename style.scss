@@ -1,0 +1,57 @@
+@function random-hex() {
+    $hex: '#';
+
+    @for $i from 1 through 6 {
+        $rand: random(15);
+
+        @if $rand >9 {
+            @if $rand ==10 {
+                $hex: $hex +'A';
+            }
+
+            @else {
+                @if $rand ==11 {
+                    $hex: $hex +'B';
+                }
+
+                @else {
+                    @if $rand ==12 {
+                        $hex: $hex +'C';
+                    }
+
+                    @else {
+                        @if $rand ==13 {
+                            $hex: $hex +'D';
+                        }
+
+                        @else {
+                            @if $rand ==14 {
+                                $hex: $hex +'E';
+                            }
+
+                            @else {
+                                @if $rand ==15 {
+                                    $hex: $hex +'F';
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        @else {
+            $hex: $hex + $rand;
+        }
+    }
+    @return unquote($hex);
+}
+
+@for $i from 1 through 6 {
+    .container{
+        .col:nth-child(#{$i}) {
+            background-color: random-hex();
+            height: 16rem;
+            width: $i * 0.5rem;
+        }
+    }
+}
